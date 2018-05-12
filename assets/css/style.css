@@ -1,0 +1,101 @@
+/********* General Site Styles **********/
+html {
+    background-color: #2969B7;
+
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2, p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+
+/********* Site Header **********/
+#site-logo {
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+/********* Main Site Body **********/
+
+.active-content {
+    padding-bottom: 20px;
+    margin-right: 0;
+    width: 98%;
+}
+
+.active-content p {
+    margin: auto;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.inactive-content {
+    position: fixed;
+    top: 90%;;
+    left: 60%;
+    margin: 0;
+}
+
+.blue {
+    background-color: #434943;
+}
+
+/****** About Me *******/
+#about-me-container {
+    background-color: #DBDBDB;
+}
+
+#about-me-container h1, p {
+    color: #434943;
+}
+
+/* #paragraph-scrolling{
+    height: 50%;
+    overflow: auto;
+} */
+
+/****** Portfolio *******/
+#portfolio-container {
+    background-color: #434943;
+}
+
+#portfolio-container h1 {
+    color: #F7CBCB;
+}
+
+#portfolio-container p {
+    color: #F7CBCB;
+}
+
+#porfolio-container img {
+    width: 100%;
+}
+
+/******* Scroll Arrow *******/
+/* #scroll-arrow {
+    position: fixed;
+    bottom: 80px;
+    left: 80px;
+    width: 200px;
+} */
+
+/*********** Media Queries ************/
+@media screen and (max-width: 640px) {
+    .active-content {
+        position: fixed;
+        height: 90%;
+        margin-right: 0;
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+    
+    .active-content p {
+
+    }
+}
