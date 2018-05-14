@@ -12,8 +12,6 @@ h2, p {
 }
 
 
-
-
 /********* Site Header **********/
 #site-logo {
     margin: auto;
@@ -24,8 +22,9 @@ h2, p {
 /********* Main Site Body **********/
 
 .active-content {
-    padding-bottom: 20px;
+    padding-bottom: 200px;
     margin-right: 0;
+    margin-left: 20px;
     width: 98%;
 }
 
@@ -33,13 +32,6 @@ h2, p {
     margin: auto;
     width: 80%;
     padding-bottom: 20px;
-}
-
-.inactive-content {
-    position: fixed;
-    top: 90%;;
-    left: 60%;
-    margin: 0;
 }
 
 .blue {
@@ -55,10 +47,6 @@ h2, p {
     color: #434943;
 }
 
-/* #paragraph-scrolling{
-    height: 50%;
-    overflow: auto;
-} */
 
 /****** Portfolio *******/
 #portfolio-container {
@@ -85,6 +73,44 @@ h2, p {
     width: 200px;
 } */
 
+
+/****** Footer Nav Bar *******/
+#contact-button {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    background-color: #F4A337;
+    padding: 20px;
+    border-radius: 60px; 
+    width: 100px;
+    font-size: 16px;
+    color: #434943;
+    text-align: center; 
+    border: none;
+}
+
+#footer-content {
+    width: 40%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    background-color: #434943;
+}
+
+#footer-content .row {
+    margin-bottom: 0;
+}
+
+#footer-content h2 {
+    color: #DBDBDB;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+
 /*********** Media Queries ************/
 @media screen and (max-width: 640px) {
     .active-content {
@@ -94,8 +120,17 @@ h2, p {
         overflow: auto;
         padding-bottom: 100px;
     }
-    
-    .active-content p {
 
+    #footer-content h2 {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    #contact-button {
+        bottom: 45px;
+        right: 20px;
+        padding: 10px;
+        font-size: 10px;
+        width: 60px;
     }
 }
